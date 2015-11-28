@@ -1,8 +1,10 @@
 #!/bin/bash
 clear
 
-$basePath/commandBox.sh
-source $basePath/env.sh
+export parts=$basePath/parts
+$parts/commandBox.sh
+
+source $parts/env.sh
 
 
 no=0
@@ -21,17 +23,17 @@ do
         	"1")
 			echo ">> fetch all svc tags"
 			echo
-			$basePath/allsvc/operBox.sh
+			$parts/allsvc/operBox.sh
         	        ;;
 	        "2")
 	                echo ">> retag 1 svc tag"
 			echo
-			$basePath/retag.sh
+			$parts/retag.sh
 	                ;;
 		"5")
 			echo ">> download android apk & ios ipa"
 			echo
-	                $basePath/downloadClient.sh $bddoPath			
+	                $parts/downloadClient.sh $bddoPath			
 			;;
 		"6")
 			echo ">> grep string in debug log (TBD)"
@@ -40,22 +42,22 @@ do
 		"7")
 			echo ">> checkout branch"
 			echo
-			$basePath/checkoutBranch.sh
+			$parts/checkoutBranch.sh
 			;;	
 		"8")
 			echo ">> push to gerrit"
 			echo
-	                $basePath/push2Gerrit.sh			
+	                $parts/push2Gerrit.sh			
 			;;
 		"9")
 			echo ">> append change-Id on commit"
 			echo
-	                $basePath/apdIdCmt.sh			
+	                $parts/apdIdCmt.sh			
 			;;
 		"10")
 			echo ">> append change-Id in svc"
 			echo
-	                $basePath/apdIdSvc.sh			
+	                $parts/apdIdSvc.sh			
 			;;
 		"11")
 			echo ">> unzip ear (TBD)"
@@ -71,7 +73,7 @@ do
 		"s")
 			echo ">> entering option menu"
 			echo
-		        $basePath/optionBox.sh			
+		        $parts/optionBox.sh			
 			;;
 
 		"q")
@@ -88,7 +90,7 @@ do
 	echo "press return button to continue."
 	read -s
 	clear
-	$basePath/commandBox.sh
+	$parts/commandBox.sh
 done
 
 

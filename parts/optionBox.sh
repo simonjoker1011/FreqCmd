@@ -1,5 +1,5 @@
 #!/bin/bash
-source $basePath/env.sh
+source $parts/env.sh
 
 clear
 
@@ -29,14 +29,14 @@ do
 		"s")
 			echo ">> show all env variable: "
 			echo
-			cat $basePath/env.sh
+			cat $parts/env.sh
 			echo
 			;;
 		"e")
 			echo ">> edit env variable"
 			echo
-#			cat $basePath/env.sh
-			$basePath/editEnv.sh
+#			cat $parts/env.sh
+			$parts/editEnv.sh
 			;;
 		"b")
 			;;

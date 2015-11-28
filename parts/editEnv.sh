@@ -5,7 +5,7 @@ read -e -p ">> " oldpos newpos
 
 if [ $oldpos ]&&[ $newpos ]
 then
-	sed -i "s/$oldpos/$newpos/g" $basePath/env.sh
+	sed -ie "s/$oldpos/$newpos/g" $parts/env.sh
 	echo
 	echo ">> done!!"
 	echo
