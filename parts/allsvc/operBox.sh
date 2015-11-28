@@ -1,0 +1,61 @@
+#!/bin/bash
+source $basePath/env.sh
+
+clear
+
+echo
+echo "##############################################"
+echo "#              All svc operation             #"
+echo "##############################################"
+echo
+echo    "[1]  fetch tags"
+echo	"[2]  checkout to master"
+echo	"[3]  checkout to other branch"
+echo	"[4]  check if int and off tag on the same commit"
+echo
+echo    "[B]ack"
+echo
+
+cmd=0
+
+until [ $cmd == "b" ]
+do
+        read -e -p "command: " cmd
+
+        if [ -z $cmd ]
+        then
+                cmd=0
+        fi
+
+        case $cmd in
+
+                "1")
+                        echo ">> fetch tags "
+			echo
+			$basePath/allsvc/fetchAllTags.sh $bddoPath
+                        ;;
+                "2")
+                        echo ">> checkout to master"
+                        echo
+ 			$basePath/allsvc/checkMaster.sh $bddoPath
+                        ;;
+		"3")
+			echo ">> checkout to other branch"
+			echo
+			;;
+		"4")
+			echo ">> check int and off tag"
+			echo
+			$basePath/allsvc/checkIntOffTag.sh $bddoPath
+			;;
+                "b")
+                        ;;
+                *)
+                        echo ">> plz select a command above!!"
+                        echo
+                        ;;
+        esac
+done
+
+echo
+
