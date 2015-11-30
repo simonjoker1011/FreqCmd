@@ -1,4 +1,13 @@
 #!/bin/bash
+
+function press2continue(){
+	
+	echo "press return button to continue."
+	read -s
+
+}
+
+
 clear
 
 export parts=$basePath/parts
@@ -21,14 +30,10 @@ do
 
 	case ${no} in
         	"1")
-			echo ">> fetch all svc tags"
-			echo
 			$parts/allsvc/operBox.sh
         	        ;;
 	        "2")
-	                echo ">> retag 1 svc tag"
-			echo
-			$parts/retag.sh
+			$parts/onesvc/operation.sh
 	                ;;
 		"5")
 			echo ">> download android apk & ios ipa"
@@ -69,6 +74,7 @@ do
 			read -e cmd
 			$cmd 
 			echo
+			press2continue
 			;;
 		"s")
 			echo ">> entering option menu"
@@ -84,12 +90,11 @@ do
 		*)
 			echo ">> plz select a command above"
 			echo
+			press2continue
 			;;
 	esac
-		 
-	echo "press return button to continue."
-	read -s
-	clear
+	
+	clear		 
 	$parts/commandBox.sh
 done
 

@@ -4,7 +4,7 @@ echo "#           Frequent used commands           #"
 echo "##############################################"
 echo
 echo    "[1]  operation forall svc"
-echo    "[2]  retag 1 svc tag"
+echo    "[2]  operation for 1 svc"
 echo    ""
 echo    "[5]  download android apk & iOS ipa"
 echo    "[6]  grep string in debug log"
