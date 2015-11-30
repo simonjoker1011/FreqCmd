@@ -56,6 +56,7 @@ do
                         echo
                         ;;
         esac
+	echo
 done
 
 echo

@@ -2,7 +2,7 @@
 
 function pull(){
 
-read -e -p "pull from $2? " yn
+read -e -p "pull from $2? (y/n) " yn
 
 if [ $yn ]; then
 	if [ $yn == "y" ]; then
