@@ -4,7 +4,7 @@ bddoPath=~/dev/sky/systems/bddo
 bddcPath=~/dev/sky/systems/bddc
 skypPath=~/dev/sky/systems/skyp
 
-basePath=~/Desktop/FreqCmd/parts
+# basePath=~/Desktop/FreqCmd/parts
 
 bddoOffBranch=BDD-OFF-S11
 bddcOffBranch=BDDC-2.3.11-OFF

@@ -1,9 +1,15 @@
-source $basePath/env.sh
+source $parts/env.sh
 PATCH_DATE=`date +%Y%m%d`
 
 function doDownload () 
 {
-	cd $basePath/../ClientApps/
+	if [ ! -d $basePath/ClientApps ]
+	then
+		echo make dir ClientApps
+		mkdir ClientApps
+	fi
+
+	cd $basePath/ClientApps/
 
 	if [ ! -d "$PATCH_DATE" ]
 	then
@@ -18,7 +24,7 @@ function doDownload ()
 	
 	if [ -f bddi-$bddo_tag-$PATCH_DATE.apk ]
 	then
-		cp $basePath/aIntegration.js .	
+		cp $parts/aIntegration.js .	
 		sed -i "s/bddo_tag/$bddo_tag/g" aIntegration.js
 		sed -i "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" aIntegration.js
 		sed -i "s/date/$(date "+%Y%m%d")/g" aIntegration.js
@@ -33,8 +39,8 @@ function doDownload ()
 	if [ -f BuddyDo.ipa ]
 	then
 		mv BuddyDo.ipa bddi-$bddo_tag-$PATCH_DATE.ipa
-		cp $basePath/iIntegration.js .
-		cp $basePath/manifesti.plist .
+		cp $parts/iIntegration.js .
+		cp $parts/manifesti.plist .
 
 		sed -i "s/bddo_tag/$bddo_tag/g" iIntegration.js
 		sed -i "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" iIntegration.js

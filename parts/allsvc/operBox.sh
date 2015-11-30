@@ -1,5 +1,5 @@
 #!/bin/bash
-source $basePath/env.sh
+source $parts/env.sh
 
 clear
 
@@ -10,7 +10,7 @@ echo "##############################################"
 echo
 echo    "[1]  fetch tags"
 echo	"[2]  checkout to master"
-echo	"[3]  checkout to other branch"
+echo	"[3]  checkout to off branch"
 echo	"[4]  check if int and off tag on the same commit"
 echo
 echo    "[B]ack"
@@ -32,12 +32,12 @@ do
                 "1")
                         echo ">> fetch tags "
 			echo
-			$basePath/allsvc/fetchAllTags.sh $bddoPath
+			$parts/allsvc/fetchAllTags.sh $bddoPath
                         ;;
                 "2")
                         echo ">> checkout to master"
                         echo
- 			$basePath/allsvc/checkMaster.sh $bddoPath
+ 			$parts/allsvc/checkMaster.sh $bddoPath
                         ;;
 		"3")
 			echo ">> checkout to other branch"
@@ -46,7 +46,7 @@ do
 		"4")
 			echo ">> check int and off tag"
 			echo
-			$basePath/allsvc/checkIntOffTag.sh $bddoPath
+			$parts/allsvc/checkIntOffTag.sh $bddoPath
 			;;
                 "b")
                         ;;
