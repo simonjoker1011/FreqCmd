@@ -40,8 +40,9 @@ do
  			$parts/allsvc/checkMaster.sh $bddoPath
                         ;;
 		"3")
-			echo ">> checkout to other branch"
+			echo ">> checkout to off branch"
 			echo
+			$parts/allsvc/checkOff.sh $bddoPath
 			;;
 		"4")
 			echo ">> check int and off tag"
