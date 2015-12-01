@@ -1,10 +1,10 @@
-source $basePath/env.sh
+source $parts/env.sh
+
 read -e -p "plz input svc name to retag: " svc
 echo
 read -e -p "have checkout on related commit? (y/n) " yn
 
-if [ $yn == "y" ] 
-then
+if [ $yn ]&&[ $yn == "y" ]; then
 	read -e -p "plz input tag name: " tag
 
 	cd $skyPath/$svc

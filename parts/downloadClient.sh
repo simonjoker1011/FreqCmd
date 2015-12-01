@@ -24,7 +24,7 @@ function doDownload ()
 	
 	if [ -f bddi-$bddo_tag-$PATCH_DATE.apk ]
 	then
-		cp $parts/aIntegration.js .	
+		cp $parts/clientExp/aIntegration.js .	
 		sed -i "s/bddo_tag/$bddo_tag/g" aIntegration.js
 		sed -i "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" aIntegration.js
 		sed -i "s/date/$(date "+%Y%m%d")/g" aIntegration.js
@@ -39,8 +39,8 @@ function doDownload ()
 	if [ -f BuddyDo.ipa ]
 	then
 		mv BuddyDo.ipa bddi-$bddo_tag-$PATCH_DATE.ipa
-		cp $parts/iIntegration.js .
-		cp $parts/manifesti.plist .
+		cp $parts/clientExp/iIntegration.js .
+		cp $parts/clientExp/manifesti.plist .
 
 		sed -i "s/bddo_tag/$bddo_tag/g" iIntegration.js
 		sed -i "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" iIntegration.js

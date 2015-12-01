@@ -4,46 +4,47 @@ function checkout(){
 	cd $skyPath/$1
 	git checkout $2
 	
+	echo
 	echo "have checkout $1 to $2"
 	echo
 
 	read -e -p "do pull from $2? (y/n) " yn
 	echo
 
-	if [ $yn == "y" ]
+	if [ $yn ]&&[ $yn == "y" ]
 	then
-		pull $2
+		pull $1 $2
 	fi
 }
 function pull(){
-	git pull origin $1
+	git pull origin $2
+	echo
+	echo ">> head of $1 is now on"
+	echo
+	git log --stat -1
 }
 
-source $basePath/env.sh
+source $parts/env.sh
 
 read -e -p "checkout which svc? " svc
 
 echo
 echo "to which branch? "
-echo "	1) master"
-echo "	2) $bddoOffBranch"
-echo "	3) $bddcOffBranch"
-echo "	4) $skypOffBranch"
+echo "	1) $bddoOffBranch"
+echo "	2) $bddcOffBranch"
+echo "	3) $skypOffBranch"
 
 read -p ">> " branch
 echo
 
 case $branch in
 	"1")
-		checkout $svc master
-		;;
-	"2")
 		checkout $svc $bddoOffBranch
 		;;
-	"3")
+	"2")
 		checkout $svc $bddcOffBranch
 		;;
-	"4")
+	"3")
 		checkout $svc $skypOffBranch
 		;;
 esac

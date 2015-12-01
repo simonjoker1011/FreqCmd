@@ -1,7 +1,13 @@
 #!/bin/bash
 source $parts/env.sh
-operBox=$parts/onesvc/operBox.sh
+thisfolder=$parts/onesvc
 
+function press2continue(){
+
+        echo "press return button to continue."
+        read -s
+
+}
 
 clear
 
@@ -9,7 +15,7 @@ cmd=0
 
 until [ $cmd == "b" ]
 do
-	$operBox
+	$thisfolder/operBox.sh
 
         read -e -p "command: " cmd
 
@@ -20,27 +26,35 @@ do
 
         case $cmd in
 
-                "1")
+		"1")
+			echo ">> tag on commit"
+			;;
+                "2")
                         echo ">> retag"
 			echo
+			$thisfolder/retag.sh
                         ;;
-                "2")
-                        echo ">> append change-Id on commit"
-                        echo
-                        ;;
-		"3")
-                        echo ">> push to gerrit"			
-			echo
-			;;
-		"4")
+ 		"3")
 			echo ">> checkout to master"
 			echo
+			$thisfolder/checkoutMaster.sh
 			;;
-		"5")
+		"4")
 			echo ">> checkout to off branch"
 			echo
+			$thisfolder/checkoutBranch.sh
 			;;
+	        "5")
+                        echo ">> append change-Id on commit"
+                        echo
+			$thisfolder/apdIdCmt.sh
+                        ;;
 		"6")
+                        echo ">> push to gerrit"			
+			echo
+			$thisfolder/push2Gerrit.sh
+			;;
+		"7")
 			echo ">> check diff between int and off tags"
 			echo
 			;;
@@ -52,6 +66,7 @@ do
                         ;;
         esac
 	echo
+	press2continue
 done
 
 echo

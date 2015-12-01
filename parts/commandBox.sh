@@ -8,9 +8,7 @@ echo    "[2]  operation for 1 svc"
 echo    ""
 echo    "[5]  download android apk & iOS ipa"
 echo    "[6]  grep string in debug log"
-echo	"[7]  checkout branch"
-echo    "[8]  push to gerrit"
-echo	"[9]  append change-Id on commit"
+echo
 echo	"[10] append change-Id in svc"
 echo    "[11] unzip ear"
 echo
