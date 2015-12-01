@@ -1,4 +1,5 @@
 #!/bin/bash
+source $parts/env.sh
 
 function press2continue(){
 	
@@ -23,6 +24,12 @@ function press2continue(){
 		"6")
 			echo ">> grep string in debug log (TBD)"
 			echo
+			;;
+		"8")
+			echo "gradle clean & build"
+			echo
+			$parts/buildAll.sh $bddoPath
+			press2continue
 			;;
 		"10")
 			echo ">> append change-Id in svc"
@@ -50,7 +57,7 @@ function press2continue(){
 		"q")
 			echo ">> exit"
 			echo
-			break
+			
 			;;
 		*)
 			echo ">> plz select a command above"

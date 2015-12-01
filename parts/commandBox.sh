@@ -9,6 +9,8 @@ echo    ""
 echo    "[5]  download android apk & iOS ipa"
 echo    "[6]  grep string in debug log"
 echo
+echo	"[8] clean & build all"
+echo
 echo	"[10] append change-Id in svc"
 echo    "[11] unzip ear"
 echo
