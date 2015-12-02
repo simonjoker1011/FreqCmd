@@ -7,7 +7,7 @@ echo
 git pull origin master
 echo
 
-read -e -p "clean & build all? " yn
+read -e -p "clean & build all? (y/n) " yn
 
 echo
 
