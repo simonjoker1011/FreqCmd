@@ -13,7 +13,15 @@ echo
 
 if [ $yn ]&&[ $yn == "y" ]; then
 
-	nohup gradle cleanall all&> $(date "+%Y%m%d_%H%M%S").txt&
+        if [ -f *.txt ]; then
+                rm *.txt
+        fi
+
+	if [ -f bddo-* ]; then
+                rm bddo-*
+        fi
+
+	nohup gradle cleanall all tarprod&> $(date "+%Y%m%d_%H%M%S").txt&
 	
 	echo "*********************************************"
 	echo "*					    *"
