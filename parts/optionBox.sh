@@ -10,6 +10,8 @@ echo "##############################################"
 echo
 echo	"[S]how all env variable"
 echo	"[E]dit env variable"
+echo
+echo	"[W]rite memo"
 echo	"[B]ack"
 echo
 
@@ -37,6 +39,11 @@ do
 			echo
 #			cat $parts/env.sh
 			$parts/editEnv.sh
+			;;
+		"w")
+			echo ">> write memo"
+			echo
+			vim $parts/memo.txt
 			;;
 		"b")
 			;;

@@ -3,6 +3,7 @@ source $parts/env.sh
 
 function press2continue(){
 	
+	echo	
 	echo "press return button to continue."
 	read -s
 
@@ -48,6 +49,12 @@ function press2continue(){
 			read -e cmd
 			$cmd 
 			echo
+			press2continue
+			;;
+		"r")
+			echo ">> run test script"
+			echo
+			$basePath/test.sh
 			press2continue
 			;;
 		"s")
