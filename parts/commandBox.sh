@@ -12,11 +12,12 @@ echo
 echo	"[8]  clean & build all in current stat"
 echo
 echo	"[10] append change-Id in svc"
-echo    "[11] unzip ear"
+echo    "[11] unzip ear (TBD)"
 echo	"[12] show int/off current version (TBD)"
 echo
 echo    "[T]est command"
 echo	"[R]un test script"
+echo	"[E]dit test script"
 echo
 echo	"[M]"emo
 echo

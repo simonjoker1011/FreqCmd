@@ -51,6 +51,11 @@ function press2continue(){
 			echo
 			press2continue
 			;;
+		"e")
+			echo ">> edit test script"
+			echo
+			vim $basePath/test.sh
+			;;
 		"r")
 			echo ">> run test script"
 			echo
