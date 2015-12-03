@@ -9,7 +9,7 @@ echo    ""
 echo    "[5]  download android apk & iOS ipa"
 echo    "[6]  grep string in debug log (TBD)"
 echo
-echo	"[8]  clean & build all"
+echo	"[8]  clean & build all in current stat"
 echo
 echo	"[10] append change-Id in svc"
 echo    "[11] unzip ear"
