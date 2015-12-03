@@ -13,8 +13,10 @@ echo	"[8] clean & build all"
 echo
 echo	"[10] append change-Id in svc"
 echo    "[11] unzip ear"
+echo	"[12] show int/off current version (TBD)"
 echo
 echo    "[T]est command"
+echo	"[M]"emo
 echo
 echo    "[S]etup option"
 echo    "[Q]uit"

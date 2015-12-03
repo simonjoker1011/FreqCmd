@@ -20,6 +20,7 @@ function press2continue(){
 			echo ">> download android apk & ios ipa"
 			echo
 	                $parts/downloadClient.sh $bddoPath			
+			press2continue
 			;;
 		"6")
 			echo ">> grep string in debug log (TBD)"
@@ -34,7 +35,8 @@ function press2continue(){
 		"10")
 			echo ">> append change-Id in svc"
 			echo
-	                $parts/apdIdSvc.sh			
+	                $parts/apdIdSvc.sh		
+			press2continue	
 			;;
 		"11")
 			echo ">> unzip ear (TBD)"
@@ -54,6 +56,10 @@ function press2continue(){
 		        $parts/optionBox.sh			
 			;;
 
+		"m")
+			cat $parts/memo.txt
+			press2continue
+			;;
 		"q")
 			echo ">> exit"
 			echo
