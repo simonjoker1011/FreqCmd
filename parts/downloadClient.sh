@@ -1,5 +1,37 @@
-source $parts/env.sh
+
+#! bin/bash
+# source $parts/env.sh
 PATCH_DATE=`date +%Y%m%d`
+
+function showInfo(){
+
+	echo
+	echo "==================== $1 info ===================="
+	echo
+case $1 in 
+	"apk") 
+		echo "[ .js info ]"
+		cat aIntegration.js
+		echo
+		echo "[ md5 ]"
+		md5sum $2
+		;;
+	"ios")
+		echo "[ .js info ]"
+		cat iIntegration.js
+		echo
+		echo "[ md5 ]"
+		md5sum $2
+		echo
+		echo "[ manifest ]"
+		cat manifesti.plist
+		;;
+esac
+	echo
+	echo "================================================="
+
+}
+
 
 function doDownload () 
 {
@@ -7,6 +39,7 @@ function doDownload ()
 	then
 		echo make dir ClientApps
 		mkdir ClientApps
+		echo
 	fi
 
 	cd $basePath/ClientApps/
@@ -15,6 +48,7 @@ function doDownload ()
 	then
 		echo make dir $PATCH_DATE
 		mkdir $PATCH_DATE
+		echo
 	fi
 
 	cd $PATCH_DATE
@@ -25,9 +59,11 @@ function doDownload ()
 	if [ -f bddi-$bddo_tag-$PATCH_DATE.apk ]
 	then
 		cp $parts/clientExp/aIntegration.js .	
-		sed -i "s/bddo_tag/$bddo_tag/g" aIntegration.js
-		sed -i "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" aIntegration.js
-		sed -i "s/date/$(date "+%Y%m%d")/g" aIntegration.js
+		sed -ie "s/bddo_tag/$bddo_tag/g" aIntegration.js
+		sed -ie "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" aIntegration.js
+		sed -ie "s/date/$(date "+%Y%m%d")/g" aIntegration.js
+
+		showInfo apk bddi-$bddo_tag-$PATCH_DATE.apk
 	else
 		echo no apk: v$bddo_tag
 	fi
@@ -42,10 +78,12 @@ function doDownload ()
 		cp $parts/clientExp/iIntegration.js .
 		cp $parts/clientExp/manifesti.plist .
 
-		sed -i "s/bddo_tag/$bddo_tag/g" iIntegration.js
-		sed -i "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" iIntegration.js
-	        sed -i "s/bddo_tag/$bddo_tag/g" manifesti.plist
-	        sed -i "s/date/$(date "+%Y%m%d")/g" manifesti.plist
+		sed -ie "s/bddo_tag/$bddo_tag/g" iIntegration.js
+		sed -ie "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" iIntegration.js
+	        sed -ie "s/bddo_tag/$bddo_tag/g" manifesti.plist
+	        sed -ie "s/date/$(date "+%Y%m%d")/g" manifesti.plist
+
+		showInfo ios bddi-$bddo_tag-$PATCH_DATE.ipa
 	else
 		echo no ipa: v$bddo_tag
 		echo

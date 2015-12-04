@@ -69,6 +69,7 @@ function press2continue(){
 			;;
 
 		"m")
+			clear
 			cat $parts/memo.txt
 			press2continue
 			;;
