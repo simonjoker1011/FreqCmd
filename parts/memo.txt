@@ -1,7 +1,12 @@
 
-[TBD]
+[Enhancement]
 
-1.
+1. tag off base on int 
+2. show latest tag
+3.
+
+[Bug]
+
+1. test.sh add many unknown files
 2.
 3.
-4.
