@@ -21,6 +21,8 @@ echo	"[E]dit test script"
 echo
 echo	"[M]"emo
 echo
+echo	"[B]ackup system (TBD)"
+echo
 echo    "[S]etup option"
 echo    "[Q]uit"
 echo

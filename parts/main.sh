@@ -44,10 +44,9 @@ function press2continue(){
 			echo
 			;;
 		"t")
-			echo ">> input custom command"
+			echo ">> input custom command (press q to exit)"
 			echo
-			read -e cmd
-			$cmd 
+			$parts/testCommand.sh
 			echo
 			press2continue
 			;;
@@ -77,6 +76,11 @@ function press2continue(){
 			echo ">> exit"
 			echo
 			
+			;;
+		"b")
+			echo ">> backup system"
+			echo
+			press2continue
 			;;
 		*)
 			echo ">> plz select a command above"
