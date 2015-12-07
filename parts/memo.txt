@@ -4,6 +4,7 @@
 1. tag off base on int 
 2. show latest tag
 3. backup system
+4. dept linux ios download script
 
 [Bug]
 
