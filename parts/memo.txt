@@ -1,3 +1,7 @@
+[Memo]
+
+1. PMD plugin:
+	 https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/
 
 [Enhancement]
 
