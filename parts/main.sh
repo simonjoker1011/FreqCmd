@@ -27,6 +27,12 @@ function press2continue(){
 			echo ">> grep string in debug log (TBD)"
 			echo
 			;;
+		"7")
+			echo "gradle clean & build"
+			echo
+			$parts/buildSkyp.sh $skypPath
+			press2continue
+			;;
 		"8")
 			echo "gradle clean & build"
 			echo
