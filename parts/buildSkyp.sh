@@ -6,7 +6,7 @@ cd $1
 # echo
 # git pull origin master
 # echo
-read -e -p "have checkout already? (y/n) " yn
+read -s -p "plz ensure have already done checkout job" yn1
 echo
 
 read -e -p "clean & build all? (y/n) " yn
@@ -19,7 +19,7 @@ if [ $yn ]&&[ $yn == "y" ]; then
                 rm *.txt
         fi
 
-	if [ -f bddo-* ]; then
+	if [ -f skyp-* ]; then
                 rm bddo-*
         fi
 
@@ -27,7 +27,7 @@ if [ $yn ]&&[ $yn == "y" ]; then
 	
 	echo "*********************************************"
 	echo "*					    *"
-	echo "* plz tail $(date "+%Y%m%d_%H%M%S").txt in bddo path *"
+	echo "* plz tail $(date "+%Y%m%d_%H%M%S").txt in skyp path *"
 	echo "*					    *"
 	echo "*********************************************"
 	echo
