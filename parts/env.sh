@@ -1,4 +1,4 @@
-skyPath=~/dev/sky/
+skyPath=~/dev/sky
 
 bddoPath=~/dev/sky/systems/bddo
 bddcPath=~/dev/sky/systems/bddc
