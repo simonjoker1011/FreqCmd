@@ -2,6 +2,8 @@
 
 1. PMD plugin:
 	 https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/
+2. remote login:
+	simonlinux.local,192.168.124.1 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIHNo62DOenk1NfLoWIjDOL/+ktJEPxKKosWPrjDDr+BbVYSDrB6XeKYhVdEea5Py/cqfeDxmuYsPvo5jStDLes=
 
 [Enhancement]
 
