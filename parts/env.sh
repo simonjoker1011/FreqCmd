@@ -6,8 +6,8 @@ skypPath=~/dev/sky/systems/skyp
 
 # basePath=~/Desktop/FreqCmd/parts
 
-bddoOffBranch=BDD-OFF-S11
-bddcOffBranch=BDDC-2.3.11-OFF
-skypOffBranch=SKYP-2.3.11-OFF
+bddoOffBranch=BDD-OFF-S12
+bddcOffBranch=BDDC-2.3.12-OFF
+skypOffBranch=SKYP-2.3.12-OFF
 
 testvar=000

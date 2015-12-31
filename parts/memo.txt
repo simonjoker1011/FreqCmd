@@ -2,8 +2,35 @@
 
 1. PMD plugin:
 	 https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/
+
 2. remote login:
-	simonlinux.local,192.168.124.1 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIHNo62DOenk1NfLoWIjDOL/+ktJEPxKKosWPrjDDr+BbVYSDrB6XeKYhVdEea5Py/cqfeDxmuYsPvo5jStDLes=
+	[simonhuang@simonlinux function]$ ifconfig
+enp0s25: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.111.93  netmask 255.255.255.0  broadcast 192.168.111.255
+        inet6 fe80::ba6b:23ff:fe20:1174  prefixlen 64  scopeid 0x20<link>
+        ether b8:6b:23:20:11:74  txqueuelen 1000  (Ethernet)
+        RX packets 33172918  bytes 23227673449 (21.6 GiB)
+        RX errors 0  dropped 4513  overruns 0  frame 0
+        TX packets 21682539  bytes 2738462122 (2.5 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 20  memory 0xe4600000-e4620000  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 0  (Local Loopback)
+        RX packets 2381712  bytes 680503181 (648.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2381712  bytes 680503181 (648.9 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.124.1  netmask 255.255.255.0  broadcast 192.168.124.255
+        ether 52:54:00:cc:f6:57  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 [Enhancement]
 
