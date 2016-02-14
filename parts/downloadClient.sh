@@ -14,14 +14,14 @@ case $1 in
 		cat aIntegration.js
 		echo
 		echo "[ md5 ]"
-		md5sum $2
+		md5 $2
 		;;
 	"ios")
 		echo "[ .js info ]"
 		cat iIntegration.js
 		echo
 		echo "[ md5 ]"
-		md5sum $2
+		md5 $2
 		echo
 		echo "[ manifest ]"
 		cat manifesti.plist
@@ -59,9 +59,9 @@ function doDownload ()
 	if [ -f bddi-$bddo_tag-$PATCH_DATE.apk ]
 	then
 		cp $parts/clientExp/aIntegration.js .	
-		sed -i'' "s/bddo_tag/$bddo_tag/g" aIntegration.js
-		sed -i'' "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" aIntegration.js
-		sed -i'' "s/date/$(date "+%Y%m%d")/g" aIntegration.js
+		sed -i '' "s/bddo_tag/$bddo_tag/g" aIntegration.js
+		sed -i '' "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" aIntegration.js
+		sed -i '' "s/date/$(date "+%Y%m%d")/g" aIntegration.js
 
 		showInfo apk bddi-$bddo_tag-$PATCH_DATE.apk
 	else
@@ -78,10 +78,10 @@ function doDownload ()
 		cp $parts/clientExp/iIntegration.js .
 		cp $parts/clientExp/manifesti.plist .
 
-		sed -i'' "s/bddo_tag/$bddo_tag/g" iIntegration.js
-		sed -i'' "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" iIntegration.js
-	        sed -i'' "s/bddo_tag/$bddo_tag/g" manifesti.plist
-	        sed -i'' "s/date/$(date "+%Y%m%d")/g" manifesti.plist
+		sed -i '' "s/bddo_tag/$bddo_tag/g" iIntegration.js
+		sed -i '' "s/date&time/$(date "+%Y\/%m\/%d") $(date "+%H:%M:%S")/g" iIntegration.js
+	        sed -i '' "s/bddo_tag/$bddo_tag/g" manifesti.plist
+	        sed -i '' "s/date/$(date "+%Y%m%d")/g" manifesti.plist
 
 		showInfo ios bddi-$bddo_tag-$PATCH_DATE.ipa
 	else

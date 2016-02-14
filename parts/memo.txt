@@ -1,5 +1,24 @@
 [Memo]
 
+SimplifyBooleanExpressionCheck
+SimplifyBooleanReturnCheck
+EmptyStatementCheck
+InnerAssignmentCheck
+RedundantImportCheck
+AvoidStarImportCheck
+UnusedImportsCheck
+
+?:
+    MethodParamPadCheck
+    ParenPadCheck
+    ArrayTypeStyleCheck
+    EmptyBlockCheck
+    OperatorWrapCheck
+                       
+interesting:
+    ModifierOrderCheck
+
+
 1. PMD plugin:
 	 https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/
 
