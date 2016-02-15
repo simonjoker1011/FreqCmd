@@ -1,0 +1,27 @@
+checkstyle:
+
+2	EmptyStatementCheck
+3	SimplifyBooleanExpressionCheck
+4	InnerAssignmentCheck
+6	RedundantImportCheck
+10	SimplifyBooleanReturnCheck
+192	AvoidStarImportCheck
+460	UnusedImportsCheck
+
+?:
+
+10	MethodParamPadCheck
+16	ArrayTypeStyleCheck
+23	ParenPadCheck
+25	EmptyBlockCheck
+46	OperatorWrapCheck
+
+!
+    
+25	ModifierOrderCheck
+818	RedundantModifierCheck
+
+
+pmd:
+
+
