@@ -2,10 +2,11 @@ checkstyle:
 
 2	EmptyStatementCheck
 3	SimplifyBooleanExpressionCheck
-4	InnerAssignmentCheck
+
+# 4	InnerAssignmentCheck
 6	RedundantImportCheck
 10	SimplifyBooleanReturnCheck
-192	AvoidStarImportCheck
+# 192	AvoidStarImportCheck
 460	UnusedImportsCheck
 
 ?:
@@ -13,8 +14,8 @@ checkstyle:
 10	MethodParamPadCheck
 16	ArrayTypeStyleCheck
 23	ParenPadCheck
-25	EmptyBlockCheck
-46	OperatorWrapCheck
+# 25	EmptyBlockCheck
+# 46	OperatorWrapCheck
 
 !
     
@@ -24,15 +25,17 @@ checkstyle:
 
 pmd:
 	ExtendsObject
-	DoNotCallGarbageCollectionExplicitly
-	NcssTypeCount (default 1000)
+#	DoNotCallGarbageCollectionExplicitly
+	NcssTypeCount (default 1000) 1500
 	AvoidUsingHardCodedIP
-	NcssMethodCount (default 100)
+	NcssMethodCount (default 100) 150
 	ExcessiveParameterList (default 10)
-	AssignmentInOperand
-	EmptyIfStmt
-	AvoidReassigningParameters
+#	AssignmentInOperand
+#	EmptyIfStmt
+#	AvoidReassigningParameters
+
 	NPathComplexity (currently 100)
+
 	ModifiedCyclomaticComplexity (default 10)
 	StdCyclomaticComplexity (default 10)
 
