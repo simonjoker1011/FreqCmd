@@ -23,5 +23,23 @@ checkstyle:
 
 
 pmd:
+	ExtendsObject
+	DoNotCallGarbageCollectionExplicitly
+	NcssTypeCount (default 1000)
+	AvoidUsingHardCodedIP
+	NcssMethodCount (default 100)
+	ExcessiveParameterList (default 10)
+	AssignmentInOperand
+	EmptyIfStmt
+	AvoidReassigningParameters
+	NPathComplexity (currently 100)
+	ModifiedCyclomaticComplexity (default 10)
+	StdCyclomaticComplexity (default 10)
+
+
+
+
+
+
 
 
