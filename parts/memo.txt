@@ -15,3 +15,14 @@
 1. test.sh add many unknown files
 2.
 3.
+
+[redmine]
+buddydo-ops	Member	Edit Delete
+sky-doc	Member	Edit Delete
+sky-skyp	Member	Edit Delete
+sky-tips	Member	Edit Delete
+tas-dev	Member	Edit Delete
+tas-doc	Member	Edit Delete
+tt-adm	Member	Edit Delete
+tt-eng	Member	Edit Delete
+tt-mis
