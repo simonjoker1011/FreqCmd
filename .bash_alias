@@ -1,0 +1,39 @@
+
+alias cdfq='cd /home/simonhuang/dev/FreqCmd'
+alias cdsys='cd ~/dev/sky/systems'
+# alias cddev='cd ~/dev'
+
+alias tpe116='ssh simonhuang@192.168.1.116'
+
+alias tipsBuild1='ssh tipsadm1@192.168.1.28' # tipsadm1123
+alias tipsBuild2='ssh tipsadm2@192.168.1.28' # tipsadm2123
+alias tipsTest='ssh tengadm1@192.168.1.27'   # tengadm1123
+
+alias tipsProd='ssh tengadm@192.168.1.26'	#tengadm123
+
+# alias jenkins24='ssh jenkins@192.168.1.24'	#jenkins2015
+alias jenkins24='ssh bddiosstg1@192.168.1.24'      #bddiosstg12016
+
+alias jenkins22='ssh jenkins@192.168.1.22'	#jenkins2016
+
+alias tsmnBuild1='ssh tsmnadm1@192.168.1.28' #tsmnadm1123
+alias tsmnBuild2='ssh tsmnadm2@192.168.1.28' #tsmnadm2123
+alias tsmnProd='ssh tsmnadm@192.168.1.26' #tsmnadm2015
+
+alias prod='ssh tasusr0@54.69.146.141'		#tasusr02014
+
+alias redmineTest='mysql -v -f -h 10.240.151.214 -P 3306 -u redmine -p1a2b3c redmine_default'
+alias redmineProd='mysql -v -f -h 192.168.1.30 -P 3306 -u redmine -pRedMine2014 redmine'
+
+
+alias deploySdm='scp $REPO_HOME/sdm/prod/tasmib/* tengadm1@192.168.1.27:/home/tengadm1/tashome/var/jsvr/tasmib/deployments'
+alias deploySmn='scp $REPO_HOME/smn/prod/tasmib/* simonhuang@192.168.1.116:/home/simonhuang/tashome/var/jsvr/tasmib/deployments'
+
+
+
+# alias freq='cdfq && ./FreqCmd.sh'
+
+
+
+# === git alias ===
+alias gs='git status'
