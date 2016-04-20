@@ -25,6 +25,7 @@ alias prod='ssh tasusr0@54.69.146.141'		#tasusr02014
 alias redmineTest='mysql -v -f -h 10.240.151.214 -P 3306 -u redmine -p1a2b3c redmine_default'
 alias redmineProd='mysql -v -f -h 192.168.1.30 -P 3306 -u redmine -pRedMine2014 redmine'
 
+alias jenkins.buildint1='ssh bddint1@192.168.1.28'	#bddint12016
 
 alias deploySdm='scp $REPO_HOME/sdm/prod/tasmib/* tengadm1@192.168.1.27:/home/tengadm1/tashome/var/jsvr/tasmib/deployments'
 alias deploySmn='scp $REPO_HOME/smn/prod/tasmib/* simonhuang@192.168.1.116:/home/simonhuang/tashome/var/jsvr/tasmib/deployments'
