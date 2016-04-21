@@ -3,6 +3,11 @@
 1. PMD plugin:
 	 https://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/
 
+2. Pull all branch from remote
+
+	for remote in `git branch -r `; do git branch --track $remote; done
+
+
 [Enhancement]
 
 1. tag off base on int 
