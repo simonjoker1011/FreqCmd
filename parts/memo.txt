@@ -6,7 +6,8 @@
 2. Pull all branch from remote
 
 	for remote in `git branch -r `; do git branch --track $remote; done
-
+3.
+    Spectacle
 
 [Enhancement]
 
