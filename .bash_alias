@@ -1,7 +1,8 @@
-
 alias cdfq='cd /home/simonhuang/dev/FreqCmd'
 alias cdsys='cd ~/dev/sky/systems'
 # alias cddev='cd ~/dev'
+
+alias redmineTestOS='ssh root@10.240.151.214'   #cnt100
 
 alias tpe116='ssh simonhuang@192.168.1.116'
 
@@ -9,32 +10,38 @@ alias tipsBuild1='ssh tipsadm1@192.168.1.28' # tipsadm1123
 alias tipsBuild2='ssh tipsadm2@192.168.1.28' # tipsadm2123
 alias tipsTest='ssh tengadm1@192.168.1.27'   # tengadm1123
 
-alias tipsProd='ssh tengadm@192.168.1.26'	#tengadm123
+alias tipsProd='ssh tengadm@192.168.1.26'   #tengadm123
 
-# alias jenkins24='ssh jenkins@192.168.1.24'	#jenkins2015
+# alias jenkins24='ssh jenkins@192.168.1.24'    #jenkins2015
 alias jenkins24='ssh bddiosstg1@192.168.1.24'      #bddiosstg12016
-
-alias jenkins22='ssh jenkins@192.168.1.22'	#jenkins2016
+alias jenkins34='ssh jenkins@192.168.1.34'  #jenkins2016
+alias jenkins22='ssh jenkins@192.168.1.22'  #jenkins2016
 
 alias tsmnBuild1='ssh tsmnadm1@192.168.1.28' #tsmnadm1123
 alias tsmnBuild2='ssh tsmnadm2@192.168.1.28' #tsmnadm2123
 alias tsmnProd='ssh tsmnadm@192.168.1.26' #tsmnadm2015
 
-alias prod='ssh tasusr0@54.69.146.141'		#tasusr02014
+# Buddydo alias
+alias prod='ssh tasusr0@54.69.146.141'      #tasusr02014
 
+alias stag='ssh tasusr0@52.10.48.117'      #tasusr02014
+
+alias int2_43='ssh tasadm@192.168.1.43'     #tasadm2016
+alias int2_44='ssh tasadm@192.168.1.44'     #tasadm2016
+
+alias int2_46='ssh tasadm@192.168.1.46'     #tasadm2016
+alias int2_47='ssh tasadm@192.168.1.47'     #tasadm2016
+
+# redmine alias
 alias redmineTest='mysql -v -f -h 10.240.151.214 -P 3306 -u redmine -p1a2b3c redmine_default'
 alias redmineProd='mysql -v -f -h 192.168.1.30 -P 3306 -u redmine -pRedMine2014 redmine'
 
-alias jenkins.buildint1='ssh bddint1@192.168.1.28'	#bddint12016
+alias jenkins.buildint1='ssh bddint1@192.168.1.28'  #bddint12016
 
 alias deploySdm='scp $REPO_HOME/sdm/prod/tasmib/* tengadm1@192.168.1.27:/home/tengadm1/tashome/var/jsvr/tasmib/deployments'
 alias deploySmn='scp $REPO_HOME/smn/prod/tasmib/* simonhuang@192.168.1.116:/home/simonhuang/tashome/var/jsvr/tasmib/deployments'
-
+alias deploySim='scp $REPO_HOME/sim/prod/tasmib/* simonhuang@192.168.1.116:/home/simonhuang/tashome/var/jsvr/tasmib/deployments'
 
 
 # alias freq='cdfq && ./FreqCmd.sh'
 
-
-
-# === git alias ===
-alias gs='git status'
