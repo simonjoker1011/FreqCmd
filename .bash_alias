@@ -1,4 +1,4 @@
-alias cdfq='cd /home/simonhuang/dev/FreqCmd'
+alias cdfq='cd ~/dev/FreqCmd'
 alias cdsys='cd ~/dev/sky/systems'
 # alias cddev='cd ~/dev'
 
