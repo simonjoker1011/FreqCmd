@@ -2,7 +2,7 @@ alias cdfq='cd ~/dev/FreqCmd'
 alias cdsys='cd ~/dev/sky/systems'
 # alias cddev='cd ~/dev'
 
-alias redmineTestOS='ssh root@10.240.151.214'   #cnt100
+alias redmineTestOS='ssh simon@192.168.102.61'   #simon
 
 alias tpe116='ssh simonhuang@192.168.1.116'
 
@@ -16,6 +16,7 @@ alias tipsProd='ssh tengadm@192.168.1.26'   #tengadm123
 alias jenkins24='ssh bddiosstg1@192.168.1.24'      #bddiosstg12016
 alias jenkins34='ssh jenkins@192.168.1.34'  #jenkins2016
 alias jenkins22='ssh jenkins@192.168.1.22'  #jenkins2016
+alias jenkinstag28='ssh jenkinstag@192.168.1.28'    #jenkinstag2016
 
 alias tsmnBuild1='ssh tsmnadm1@192.168.1.28' #tsmnadm1123
 alias tsmnBuild2='ssh tsmnadm2@192.168.1.28' #tsmnadm2123
@@ -33,7 +34,7 @@ alias int2_46='ssh tasadm@192.168.1.46'     #tasadm2016
 alias int2_47='ssh tasadm@192.168.1.47'     #tasadm2016
 
 # redmine alias
-alias redmineTest='mysql -v -f -h 10.240.151.214 -P 3306 -u redmine -p1a2b3c redmine_default'
+alias redmineTest='mysql -v -f -h 192.168.102.61 -P 3306 -u redmine -p2016redmine redmine'
 alias redmineProd='mysql -v -f -h 192.168.1.30 -P 3306 -u redmine -pRedMine2014 redmine'
 
 alias jenkins.buildint1='ssh bddint1@192.168.1.28'  #bddint12016
