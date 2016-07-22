@@ -2,22 +2,39 @@ alias cdfq='cd ~/dev/FreqCmd'
 alias cdsys='cd ~/dev/sky/systems'
 # alias cddev='cd ~/dev'
 
-alias redmineTestOS='ssh simon@192.168.102.61'   #simon
-
 alias tpe116='ssh simonhuang@192.168.1.116'
 
+# TIPS alias
 alias tipsBuild1='ssh tipsadm1@192.168.1.28' # tipsadm1123
 alias tipsBuild2='ssh tipsadm2@192.168.1.28' # tipsadm2123
 alias tipsTest='ssh tengadm1@192.168.1.27'   # tengadm1123
 
 alias tipsProd='ssh tengadm@192.168.1.26'   #tengadm123
 
+# Jenkins alias
 # alias jenkins24='ssh jenkins@192.168.1.24'    #jenkins2015
 alias jenkins24='ssh bddiosstg1@192.168.1.24'      #bddiosstg12016
 alias jenkins34='ssh jenkins@192.168.1.34'  #jenkins2016
 alias jenkins22='ssh jenkins@192.168.1.22'  #jenkins2016
-alias jenkinstag28='ssh jenkinstag@192.168.1.28'    #jenkinstag2016
+alias jenkinsTag28='ssh jenkinstag@192.168.1.28'    #jenkinstag2016
+alias jenkinsTest='ssh jenkins@192.168.102.60'    # jenkins
 
+alias jenkins.svcint1="ssh bddint1@192.168.1.28"    #bddint12016
+alias jenkins.svcint2="ssh bddint2@192.168.1.28"    #bddint22016
+
+alias jenkins.iosadm1='ssh bddiosadm1@192.168.1.20'    #bddiosadm12016
+alias jenkins.iosadm2='ssh bddiosadm2@192.168.1.20'    #bddiosadm22016
+alias jenkins.iosint1='ssh bddiosint1@192.168.1.20'    #bddiosint12016
+alias jenkins.iosint2='ssh bddiosint2@192.168.1.20'    #bddiosint22016
+
+alias jenkins.bddwint1='ssh bddwint1@192.168.1.28'  #bddwint12016
+alias jenkins.bddwint2='ssh bddwint2@192.168.1.28'  #bddwint22016
+
+alias jenkins.andadm1='ssh bddandadm1@192.168.1.29' #bddandadm12016
+alias jenkins.andadm2='ssh bddandadm2@192.168.1.29' #bddandadm22016
+alias jenkins.andint1='ssh bddandint1@192.168.1.29' #bddandint12016
+alias jenkins.andint2='ssh bddandint2@192.168.1.29' #bddandint12016
+# TSMN alias
 alias tsmnBuild1='ssh tsmnadm1@192.168.1.28' #tsmnadm1123
 alias tsmnBuild2='ssh tsmnadm2@192.168.1.28' #tsmnadm2123
 alias tsmnProd='ssh tsmnadm@192.168.1.26' #tsmnadm2015
@@ -36,6 +53,9 @@ alias int2_47='ssh tasadm@192.168.1.47'     #tasadm2016
 # redmine alias
 alias redmineTest='mysql -v -f -h 192.168.102.61 -P 3306 -u redmine -p2016redmine redmine'
 alias redmineProd='mysql -v -f -h 192.168.1.30 -P 3306 -u redmine -pRedMine2014 redmine'
+
+alias redmineTestOS='ssh simon@192.168.102.61'   #simon
+
 
 alias jenkins.buildint1='ssh bddint1@192.168.1.28'  #bddint12016
 

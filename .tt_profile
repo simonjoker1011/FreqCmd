@@ -1,0 +1,17 @@
+export CLICOLOR=1
+export LSCOLOR=export LSCOLORS=GxFxCxDxBxegedabagaced
+
+if [ -f ~/tashome/tasrtenv.sh ]; then
+	source ~/tashome/tasrtenv.sh
+fi
+
+if [ -f ~/.bash_alias ]; then
+    source ~/.bash_alias
+fi
+
+export REPO_HOME=~/dev/sky
+if [ -f $REPO_HOME/bld/src/oam/script/skydevalias.sh ]; then
+        source $REPO_HOME/bld/src/oam/script/skydevalias.sh
+fi
+
+export SKY_HOME=$REPO_HOME/systems/skyp
