@@ -10,6 +10,8 @@ alias tipsBuild2='ssh tipsadm2@192.168.1.28' # tipsadm2123
 alias tipsTest='ssh tengadm1@192.168.1.27'   # tengadm1123
 
 alias tipsProd='ssh tengadm@192.168.1.26'   #tengadm123
+                                            #qweQWE123 on sweb
+
 
 # Jenkins alias
 # alias jenkins24='ssh jenkins@192.168.1.24'    #jenkins2015
@@ -34,6 +36,10 @@ alias jenkins.andadm1='ssh bddandadm1@192.168.1.29' #bddandadm12016
 alias jenkins.andadm2='ssh bddandadm2@192.168.1.29' #bddandadm22016
 alias jenkins.andint1='ssh bddandint1@192.168.1.29' #bddandint12016
 alias jenkins.andint2='ssh bddandint2@192.168.1.29' #bddandint12016
+
+alias jenkins.skypadm1='ssh skypadm1@192.168.1.29'  #skypadm1123
+alias jenkins.skypadm2='ssh skypadm2@192.168.1.29'  #skypadm2123
+
 # TSMN alias
 alias tsmnBuild1='ssh tsmnadm1@192.168.1.28' #tsmnadm1123
 alias tsmnBuild2='ssh tsmnadm2@192.168.1.28' #tsmnadm2123
@@ -66,3 +72,5 @@ alias deploySim='scp $REPO_HOME/sim/prod/tasmib/* simonhuang@192.168.1.116:/home
 
 # alias freq='cdfq && ./FreqCmd.sh'
 
+
+# jenkins gerrit:  ohsailoo
